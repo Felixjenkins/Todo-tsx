@@ -6,7 +6,7 @@ interface Props {
   task: ITask;
 }
 
-export const TodoTask = ({ task }: Props) => {
+const TodoTask = ({ task }: Props) => {
   const { todoList, setTodoList } = useGlobalContext();
 
   const completeTask = (taskNameToDelete: string): void => {
@@ -23,3 +23,5 @@ export const TodoTask = ({ task }: Props) => {
     </div>
   );
 };
+
+export default TodoTask;

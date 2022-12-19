@@ -3,7 +3,7 @@ import { useGlobalContext } from '../Hooks/useGlobalContext';
 
 import '../Styles/Header.scss';
 
-export const Header: FC = () => {
+const Header: FC = () => {
   const { task, deadline, todoList, setTask, setDeadline, setTodoList } =
     useGlobalContext();
 
@@ -42,3 +42,5 @@ export const Header: FC = () => {
     </header>
   );
 };
+
+export default Header;

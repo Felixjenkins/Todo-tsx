@@ -1,11 +1,11 @@
 import { FC } from 'react';
 import { useGlobalContext } from '../Hooks/useGlobalContext';
-import { TodoTask } from './TodoTask';
+import { TodoTask } from '../Components';
 import { ITask } from '../Interfaces';
 
 import '../Styles/TodoList.scss';
 
-export const TodoList: FC = () => {
+const TodoList: FC = () => {
   const { todoList } = useGlobalContext();
 
   return (
@@ -16,3 +16,5 @@ export const TodoList: FC = () => {
     </div>
   );
 };
+
+export default TodoList;

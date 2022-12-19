@@ -1,6 +1,5 @@
 import { FC, useState } from 'react';
-import { Header } from './Components/Header';
-import { TodoList } from './Components/TodoList';
+import { Header, TodoList } from './Components';
 import { MyGlobalContext } from './Hooks/useGlobalContext';
 import { ITask } from './Interfaces';
 import './App.scss';
